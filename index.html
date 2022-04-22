@@ -24,9 +24,8 @@
             </div>
             <ul>
                 <li v-if="viaggio.length === 0">Inserisci delle cose da fare prima di partire per un viaggio!</li>
-                <li class="cursor" :class="{'text-decoration-line-through' : viaggio.done}" v-for="(item,index) in viaggio"   :key="index">
-                {{item.toDo}}
-                <span @click="item.done = !item.done"></span>
+                <li class="cursor" :class="{'text-decoration-line-through':item.done}" v-for="(item,index) in viaggio"   :key="index">
+                <span @click="item.done = !item.done"> {{item.toDo}}</span>
                 <i class="fa-regular fa-circle-xmark" @click="removeToDo(index)"></i>
                 </li>
             </ul>
