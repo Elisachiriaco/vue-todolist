@@ -2,40 +2,40 @@ const app = new Vue({
     el: '#app',
     data: {
         viaggio: [
-            {
+            {   
+                done : false,
                 toDo: 'documenti di viaggio',
-                done : false
             },
-            {
+            {   
+                done : false,
                 toDo: 'valigia',
-                done : false
             },
             {
+                done : false,
                 toDo: "informazioni per l'arrivo",
-                done : false
             },
-            {
+            {   
+                done : false,
                 toDo: 'soldi',
-                done : false
             },
-            {
+            {   
+                done : false,
                 toDo: 'tecnologia',
-                done : false
             },
         ],
         newToDo: '',
     },
     methods: {
         addToDo(){
-            const daFare = {
+            const item = {
+                done: false,
                 toDo: this.newToDo,
-                done: false
             }
-            this.viaggio.push(daFare),
+            this.viaggio.push(item),
             this.newToDo = ''
         },
         removeToDo(i){
-            this.viaggio.splice(i, 1)
+            this.viaggio.splice(i,1)
         }
     }
 })
