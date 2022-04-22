@@ -1,3 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lobster', cursive;
+    background: linear-gradient(#eaa7a7, #b7bbe6);
+    height: 100vh;
+}
+h1{
+    font-size: 50px;
+    padding-top: 30px;
+}
 .cursor{
     cursor: pointer;
 }
+li{
+    list-style-type: none;
+    font-size: 30px;
+}
+
