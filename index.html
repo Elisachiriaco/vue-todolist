@@ -16,7 +16,7 @@
             <h1>Cose da fare prima di partire</h1>
             <div class="row input-group mb-3">
                 <div class="col-6">
-                <input type="text" class="form-control text-center" placeholder="cose da fare" aria-label="cose da fare" v-model="newToDo">
+                <input type="text" class="form-control text-center" placeholder="cose da fare" aria-label="cose da fare" v-model="newToDo" @keyup.enter="addToDo">
                 <div class="input-group-append text-center">
                 <button class="btn btn-outline-secondary" type="button" @click="addToDo">Aggiungi cose da fare</button>
                 </div>
