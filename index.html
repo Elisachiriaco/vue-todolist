@@ -10,17 +10,18 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <title>Vue To Do List</title>
 </head>
 <body>
     <div id="app">
         <div class="container">
+            <div class="todocontainer">
             <h1 class="text-center">Cose da fare prima di partire</h1>
             <div class="row input-group mb-3 justify-content-center">
                 <div class="col-6">
-                <input type="text" class="form-control text-center mt-3" placeholder="cose da fare" aria-label="cose da fare" v-model="newToDo" @keyup.enter="addToDo">
-                <div class="input-group-append text-center p-2">
+                <input type="text" class="form-control text-center mt-2" placeholder="cose da fare" aria-label="cose da fare" v-model="newToDo" @keyup.enter="addToDo">
+                <div class="input-group-append text-center p-1">
                 <button class="btn btn-outline-dark" type="button" @click="addToDo">Aggiungi cose da fare</button>
                 </div>
                 </div>
@@ -34,6 +35,52 @@
                     <i class="fa-regular fa-circle-xmark" @click="removeToDo(index)"></i>
                     </li>
                 </ul>
+                </div>
+            </div>
+            </div>
+            <h2 class="justify-content-start">Prossime mete di viaggio</h2>
+            <div class="row">
+                <div class="col-12 team-container">
+                <div class="team-card">
+                   <div class="card-image">
+                    <img src="img/cuba.jpg" alt="cuba">
+                    </div>
+                    <div class="card-text">
+                        <p>Cuba</p>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="card-image">
+                     <img src="img/new york.jpg" alt="new york">
+                     </div>
+                     <div class="card-text">
+                         <p>New York</p>
+                     </div>
+                 </div>
+                 <div class="team-card">
+                    <div class="card-image">
+                     <img src="img/amsterdam.webp" alt="amsterdam">
+                     </div>
+                     <div class="card-text">
+                         <p>Amsterdam</p>
+                     </div>
+                 </div>
+                 <div class="team-card">
+                    <div class="card-image">
+                     <img src="img/barcellona.jpg" alt="barcellona">
+                     </div>
+                     <div class="card-text">
+                         <p>Barcellona</p>
+                     </div>
+                 </div>
+                 <div class="team-card">
+                    <div class="card-image">
+                     <img src="img/auroraboreale.jpg" alt="aurora boreale">
+                     </div>
+                     <div class="card-text">
+                         <p>Finlandia</p>
+                     </div>
+                 </div>
                 </div>
             </div>
         </div>
